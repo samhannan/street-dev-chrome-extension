@@ -65,8 +65,6 @@ chrome.action.onClicked.addListener(async (tab) => {
 
   copyToClipboard(uuids[activeMatchIndex], tab.id)
 
-  console.log(uuids[activeMatchIndex])
-
   setBadge(tab.id, (activeMatchIndex + 1).toString(), 'green')
 
   timeoutId = setTimeout(() => {
